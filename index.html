@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Aid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+  
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+            background-color: rgb(47, 46, 46);
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            height: 70vh;
+            width: 100vw;
+            background: linear-gradient(rgba(0, 0, 0, 0.4)), url('image.png') no-repeat center 10%;
+            background-size: cover;
+            position: relative;
+            display: flex;
+        
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submit-btn {
+            border: none;
+        }
+
+        .ancor {
+            text-decoration: underline;
+            color: rgb(125, 125, 241);
+            text-align: center;
+        }
+
+        h5 {
+            color: crimson;
+            text-align: center;
+        }
+
+        b {
+            color: #007BFF;
+            text-shadow: 0 0 10px blue;
+        }
+
+        .fa-users {
+            color: #fd7e14;
+        }
+
+        .fa-briefcase {
+            color: #007BFF;
+        }
+
+        .fa-house {
+            color: #28a745;
+        }
+
+        .fa-phone {
+            color: green;
+        }
+
+        .fa-envelope {
+            color: red;
+        }
+
+        .card {
+            background-color: rgb(69, 66, 66);
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(40px);
+            animation: floatIn 0.8s ease-out forwards;
+        }
+        .card:nth-child(1) { animation-delay: 0.4s; }
+        .card:nth-child(2) { animation-delay: 0.6s; }
+        .card:nth-child(3) { animation-delay: 0.8s; }
+
+      @keyframes floatIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+     }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .navbar{
+            position: absolute;
+            top: 0;
+            left: 5px;
+            width: 100%;
+        
+        }
+        .hero-content{
+            padding-top: 150px;
+            margin-left: 10px;
+        }
+        .navbar-toggler{
+            filter: invert(100%);
+        } 
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <div class="row hero-section text-light ">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg " style="background: transparent;">
+                <div class="container-fluid">
+                    <!-- Brand / Logo -->
+                    <a class="navbar-brand text-white me-5" href="#">Legal Aid</a>
+    
+                    <!-- Toggler for mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto align-items-lg-center">
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-white" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-white" href="#">About</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-white" href="#">Resources</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-white" href="#">Contact</a>
+                            </li>
+                            <!-- Submit Case button -->
+                            <li class="nav-item">
+                                <a class="btn btn-danger text-white px-3" href="#">Submit Case</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End of Nav -->
+    
+            <div class="row hero-content">
+                <div class="col-6">
+                    <h1>Justice and Advocacy for All</h1>
+                    <p>Our mission is to ensure fairness, dignity, and equality by giving everyone a platform to be
+                        heard and supported at little or no cost. Here, every concern is heard and every story is
+                        valued.</p>
+                    <a href="#">
+                        <button class="bg-danger text-light submit-btn">Submit Case
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+
+        <!-- lawyers card -->
+        <h5 class=" mt-4">Available Lawyers</h5>
+
+        <div class="row mt-2">
+            <div class="col-12 col-md-4 text-light card ">
+                <div>
+                    <img src="./thomas.jpg" alt="img" class="rounded-circle" width="50" height="50">
+                    <b>Thomas Hill</b>
+                </div>
+                <p> <i class="fa-solid fa-users"></i> Family Law</p>
+                <p> <i class="fa-solid fa-phone"></i> (1-234-111-6523) </p>
+                <p> <i class="fa-solid fa-envelope"></i> thomashill12@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-4 text-light card">
+                <div>
+                    <img src="./sandra.jpg" alt="img" class="rounded-circle" width="50" height="50">
+                    <b>Sandra Stone</b>
+                </div>
+                <p> <i class="fa-solid fa-briefcase"></i> Employment Law</p>
+                <p><i class="fa-solid fa-phone"></i> (1-134-756-3456)</p>
+                <p> <i class="fa-solid fa-envelope"></i> sandrastones@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-4 text-light card">
+                <div>
+                    <img src="./thompson.jpg" alt="img" class="rounded-circle" width="50" height="50">
+                    <b>Thompson John</b>
+                </div>
+                <p> <i class="fa-solid fa-house"></i> Housing Law</p>
+                <p><i class="fa-solid fa-phone"></i> (1-643-756-4531)</p>
+                <p> <i class="fa-solid fa-envelope"></i> thompsonjohn@gmail.com</p>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-12">
+                <a href="#" class="ancor">See more Lawyers</a>
+            </div>
+        </div>
+        <!-- testimony cards -->
+        <h5 class=" mt-3">Clients Testimonies</h5>
+        <div class="row mt-2">
+            <div class="col-4 text-light">
+                <p>
+                    "They helped me solve my case quickly..." <br>
+                    -Anonymous
+                </p>
+            </div>
+            <div class="col-4 text-light">
+                <p>
+                    "Very professional and supportive lawyers." <br>
+                    -Kelechi O.
+                </p>
+            </div>
+            <div class="col-4 text-light">
+                <p>
+                    "i never thought i could get justice..." <br>
+                    -Mariam A.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="ancor">See more testimonies</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <!-- footer -->
+        <footer class="bg-dark text-white text-center py-3 ">
+            <p class="mb-0">&copy; 2025 LegalAid Nigeria. All rights reserved.</p>
+            <a href="#" class="text-white mx-2">Privacy Policy</a> |
+            <a href="#" class="text-white mx-2">Terms of Service</a> |
+            <a href="#" class="text-white mx-2">Contact Us</a>
+
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
