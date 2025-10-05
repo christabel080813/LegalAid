@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(47, 46, 46);
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55)), url('/image.png');
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.submit-btn {
+    border: none;
+}
+
+.ancor {
+    text-decoration: underline;
+    color: rgb(125, 125, 241);
+    text-align: center;
+}
+
+h5 {
+    color: crimson;
+    text-align: center;
+}
+
+b {
+    color: #007BFF;
+    text-shadow: 0 0 10px blue;
+}
+
+.fa-users {
+    color: #fd7e14;
+}
+
+.fa-briefcase {
+    color: #007BFF;
+}
+
+.fa-house {
+    color: #28a745;
+}
+
+.fa-phone {
+    color: green;
+}
+
+.fa-envelope {
+    color: red;
+}
+
+.card {
+    background-color: rgb(69, 66, 66);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(40px);
+    animation: floatIn 0.8s ease-out forwards;
+}
+.card:nth-child(1) { animation-delay: 0.4s; }
+.card:nth-child(2) { animation-delay: 0.6s; }
+.card:nth-child(3) { animation-delay: 0.8s; }
+
+@keyframes floatIn {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 100%;
+
+}
+.hero-content{
+    padding-top: 150px;
+    margin-left: 10px;
+}
+.navbar-toggler{
+    filter: invert(100%);
+}
+
+/* .hero-content h1{
+    font-size: 72px;
+} */
+
+/* .hero-content p{
+    font-size: 22px;
+} */
+
+/* .submit-btn{
+    padding: px 12px;
+} */
+
